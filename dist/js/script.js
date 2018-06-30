@@ -83,3 +83,57 @@ function sample(F){
 	}
 	return false;
 }
+
+
+// パターン04
+
+function SiteCheck(){
+value1 = "選択されていません";
+num1 = document.myFORM.myRB1.length;
+for(a=0;a<num1;a++){
+flag1 = document.myFORM.myRB1[a].checked;
+if(flag1) value1 = document.myFORM.myRB1[a].value;
+}
+value2 = "選択されていません";
+num2 = document.myFORM.myRB2.length;
+for(b=0;b<num2;b++){
+flag2 = document.myFORM.myRB2[b].checked;
+if(flag2) value2 = document.myFORM.myRB2[b].value;
+}
+value3 = "選択されていません";
+num3 = document.myFORM.myRB3.length;
+for(c=0;c<num3;c++){
+flag3 = document.myFORM.myRB3[c].checked;
+if(flag3) value3 = document.myFORM.myRB3[c].value;
+}
+value4 = "選択されていません";
+num4 = document.myFORM.myRB4.length;
+for(d=0;d<num4;d++){
+flag4 = document.myFORM.myRB4[d].checked;
+if(flag4) value4 = document.myFORM.myRB4[d].value;
+}
+value5 = "選択されていません";
+num5 = document.myFORM.myRB5.length;
+for(e=0;e<num5;e++){
+flag5 = document.myFORM.myRB5[e].checked;
+if(flag5) value5 = document.myFORM.myRB5[e].value;
+}
+sWin = window.open("","","width=440,height=260,left=300,top=20,resizable=yes");
+sWin.document.open();
+sWin.document.write("<html><head><title>判定結果</title></head><body bgcolor='#F0F8FF'>");
+sWin.document.write("<center><font style='font-size : 16px; color : #0099FF'>■□■ 判定結果 ■□■</font></center><br>");
+sWin.document.write("<div align=center><center><table border=0 cellpadding=5 cellspacing=0>");
+sWin.document.write("<tr><td align=right><font style='font-size : 14px; color : #0099FF'>１日のアクセス数　・・・</font></td>");
+sWin.document.write("<td><b><font style='font-size : 14px; color : #0099FF'>"+value1+"</font></b></td></tr>");
+sWin.document.write("<tr><td align=right><font style='font-size : 14px; color : #0099FF'>更新をするペース　・・・</font></td>");
+sWin.document.write("<td><b><font style='font-size : 14px; color : #0099FF'>"+value2+"</font></b></td></tr>");
+sWin.document.write("<tr><td align=right><font style='font-size : 14px; color : #0099FF'>サイトのページ数　・・・</font></td>");
+sWin.document.write("<td><b><font style='font-size : 14px; color : #0099FF'>"+value3+"</font></b></td></tr>");
+sWin.document.write("<tr><td align=right><font style='font-size : 14px; color : #0099FF'>検索サイト登録数　・・・</font></td>");
+sWin.document.write("<td><b><font style='font-size : 14px; color : #0099FF'>"+value4+"</font></b></td></tr>");
+sWin.document.write("<tr><td align=right><font style='font-size : 14px; color : #0099FF'>サイトへのメール　・・・</font></td>");
+sWin.document.write("<td><b><font style='font-size : 14px; color : #0099FF'>"+value5+"</font></b></td></tr>");
+sWin.document.write("<tr><td colspan=2 align=center><br><FORM><INPUT TYPE='button' onClick='window.close()' value='CLOSE'></FORM>");
+sWin.document.write("</td></tr></table></center></div></body></html>");
+sWin.document.close();
+}

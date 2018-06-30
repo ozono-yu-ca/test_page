@@ -1,7 +1,7 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>マッチング診断：テスト作成</title>
+	<title>テスト作成</title>
 	<meta charset="utf-8">
 </head>
 <body>
@@ -85,6 +85,90 @@
 	</form>
 </section>
 <!-- end パターン03 -->
+<hr>
+<!-- start パターン04 -->
+<section style="margin: 60px 0;">
+	<FORM name="myFORM"><table border="0" cellpadding="2" cellspacing="0">
+	<tr>
+		<td colspan="5" align="center"><b><font style="font-size:18px" color="#0099FF">◆◇◆ あなたのサイトチェック ◆◇◆</font></b></td> 
+	<tr>
+		<td colspan="5" align="center"><hr size="1"></td>
+	<tr>
+		<td colspan="5" align="center"><font color="#0099FF">～ １日のアクセス数 ～</font></td> 
+	</tr>
+	<tr>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB1" value="これではさみしいですね">１０以下</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB1" value="さらなるアクセスアップを！">１０～５０</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB1" value="なかなかいい感じです">５０～１００</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB1" value="とてもすばらしいです">１００～５００</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB1" value="すごいですね、ぜひ相互リンクを！">５００以上</font></td>
+	</tr>
+	<tr>
+		<td colspan="5" align="center"><hr size="1"></td>
+		</tr>
+		<tr>
+		<td colspan="5" align="center"><font color="#0099FF">～ 更新をするペース ～</font></td> 
+	</tr>
+	<tr>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB2" value="お忙しいのでしょうか？">年１回位</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB2" value="もっと更新しましょう">月１回位</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB2" value="こんな感じでしょうね">週１回位</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB2" value="よく頑張っています">週２、３回</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB2" value="寝る時間はありますか？">ほぼ毎日</font></td>
+		</tr>
+		<tr>
+		<td colspan="5" align="center"><hr size="1"></td>
+		</tr>
+		<tr>
+		<td colspan="5" align="center"><font color="#0099FF">～ サイトのページ数 ～</font></td> 
+	</tr>
+	<tr>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB3" value="ちょっと少ないですよ">５以下</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB3" value="これなら管理がラクでしょうね">５～１０</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB3" value="コンテンツを増やしてみては？">１０～２０</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB3" value="なかなか充実しているようですね">２０～５０</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB3" value="ファイルの管理が大変でしょうね">５０以上</font></td>
+		</tr>
+		<tr>
+		<td colspan="5" align="center"><hr size="1"></td>
+		</tr>
+		<tr>
+		<td colspan="5" align="center"><font color="#0099FF">～ 検索サイト登録数 ～</font></td> 
+	</tr>
+	<tr>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB4" value="そこは秘密のサイトですか？">していない</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB4" value="ちょっと少ないですよ">１０以下</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB4" value="さらに登録していきましょう">５０以下</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB4" value="これくらいでしょうね">１００以下</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB4" value="自分で登録したんですか？">１００以上</font></td>
+		</tr>
+		<tr>
+		<td colspan="5" align="center"><hr size="1"></td>
+		</tr>
+		<tr>
+		<td colspan="5" align="center"><font color="#0099FF">～ サイトへのメール ～</font></td> 
+	</tr>
+	<tr>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB5" value="アドレスを掲載してますか？">年に１通</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB5" value="お友達からだけでしょうか？">月に１通</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB5" value="もっと欲しいですよね">週に１通</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB5" value="ちょうどいい感じですね">週２、３通</font></td>
+		<td><font color="#0099FF"><INPUT type="radio" name="myRB5" value="返事が忙しいでしょうね">ほぼ毎日</font></td>
+	</tr>
+	<tr>
+		<td colspan="5" align="center"><hr size="1"></td>
+		</tr>
+		<tr>
+		<td colspan="5" align="center">
+		<font color="#0099FF">
+		<INPUT type="button" value="判定する" onClick="SiteCheck()"><INPUT type="reset" value="リセット">
+		</font>
+		</td>
+	</tr>
+	</table></FORM>
+</section>
+<!-- end パターン04 -->
+
 
 <script type="text/javascript" src="js/script.js"></script>
 </body>
