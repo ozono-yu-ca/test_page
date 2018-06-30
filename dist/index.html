@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>マッチング診断：テスト作成</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<!-- start パターン01 -->
+<section style="margin: 60px 0;">
+	<script>
+	var data = [
+		{content: "いち", image: "http://i.yimg.jp/images/ks/official/nt/ch48_grd01.gif"},
+		{content: "にい", image: "http://i.yimg.jp/images/ks/official/nt/ch48_grd02.gif"},
+		{content: "さん", image: "http://i.yimg.jp/images/ks/official/nt/ch48_grd03.gif"},
+		{content: "よん", image: "http://i.yimg.jp/images/ks/official/nt/ch48_grd04.gif"},
+		{content: "ごお", image: "http://i.yimg.jp/images/ks/official/nt/ch48_grd05.gif"},
+	];
+	function display() {
+
+		// 診断結果（ランダムだけど）
+		var r = Math.floor(Math.random() * data.length);
+
+		// 診断結果に当たる画像を表示する
+		var e = document.getElementById("result");
+		e.src = data[r].image;
+
+		// 診断結果に当たるメッセージを表示する
+		e = document.getElementById("content");
+		e.innerHTML = data[r].content;
+	}
+	</script>
+
+	<button onclick="display()">診断</button>
+	<div>
+	<div id="content"></div>
+	<img style="width: 200px; height: 200px" id="result">
+	</div>
+
+</section>
+<!-- end パターン01 -->
+<hr>
+<!-- start パターン02 -->
+<section style="margin: 60px 0;">
+
+	<fieldset><legend>ラジオボタンＡ郡</legend> 
+		<label>a<input type="radio" name="groupA" value="aa" checked onclick="extendLink()"></label> 
+		<label>b<input type="radio" name="groupA" value="ab" onclick="extendLink()"></label> 
+	</fieldset> 
+
+	<fieldset><legend>ラジオボタンＢ郡</legend> 
+		<label>1<input type="radio" name="groupB" value="b1" checked onclick="extendLink()"></label> 
+		<label>2<input type="radio" name="groupB" value="b2" onclick="extendLink()"></label> 
+	</fieldset> 
+
+	<fieldset><legend>ラジオボタンＣ郡</legend> 
+		<label>a<input type="radio" name="groupC" value="ca" checked onclick="extendLink()"></label> 
+		<label>b<input type="radio" name="groupC" value="cb" onclick="extendLink()"></label> 
+	</fieldset> 
+
+	<fieldset><legend>ラジオボタンＤ郡</legend> 
+		<label>1<input type="radio" name="groupD" value="d1" checked onclick="extendLink()"></label> 
+		<label>2<input type="radio" name="groupD" value="d2" onclick="extendLink()"></label> 
+	</fieldset> 
+
+	<p><a href="http://www.google.co.jp/aab1cad1" id="variableLink">[aa:b1:ca:d1]</a></p>
+
+</section>
+<!-- end パターン02 -->
+
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
